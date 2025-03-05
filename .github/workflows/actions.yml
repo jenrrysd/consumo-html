@@ -1,6 +1,6 @@
 name: CI/CD Workflow
 
-#on: 
+on: 
   workflow_dispatch:
   push:
     branches:
