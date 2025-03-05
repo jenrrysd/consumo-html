@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo Eléctrico</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Metaetiquetas Open Graph -->
+    <meta property="og:title" content="Calculadora de consumo electrico de habitación">
+    <meta property="og:description" content="Calcula el consumo mensual de la
+    electricidad mediante la lectura del contador de una habitación.">
+    <meta property="og:image" content="https://consumo.dextre.xyz/imagenes/miniatura.png">
+    <meta property="og:url" content="https://consumo.dextre.xyz">
+
+    <!--Aqui se agrega el favicon -->
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Consumo Eléctrico</h1>
+
+        <label for="kilovatio">Ingrese kilovatio hora:</label>
+        <input type="number" id="kilovatio" placeholder="Kilovat hora ejem 0.64">
+
+        <label for="consumo">Consumo eléctrico del inquilino:</label>
+        <input type="number" id="consumo" placeholder="Ingrese el consumo">
+
+        <label for="adicional">Adicional (baño, hall, lavandería):</label>
+        <input type="number" id="adicional" placeholder="Ingrese el adicional">
+
+        <div class="buttons">
+            <button onclick="calcularConsumo()">Calcular</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <!-- <button onclick="salir()">Salir</button> -->
+        </div>
+
+        <!-- <pre id="resultado"></pre> -->
+        <!-- <p id="resultado"></p> -->
+        <div id="resultado" style="white-space: pre;"></div>
+        <!-- <textarea id="resultado"></textarea> -->
+        <p id="total"></p>
+
+        <p class="autor">Creado por: Jenrry Soto Dextre</p>
+        <p class="enlace" onclick="abrirUrl()">Web: dextre.xyz</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

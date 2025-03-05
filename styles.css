@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecebeb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    /* height: auto; */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.buttons {
+    /* margin: 15px 0; */
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    gap: 10px;
+    /* Espacio entre botones */
+    margin-top: 10px;
+    /* Margen superior */
+}
+
+button {
+    padding: 10px 35px;
+    /* margin: 5px; */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    width: 300px;
+    /* Ancho fijo */
+    height: 150px;
+    /* Alto fijo */
+    padding: 10px;
+    /* Espaciado interno */
+    font-family: monospace;
+    text-align: justify;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.autor {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.enlace {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
